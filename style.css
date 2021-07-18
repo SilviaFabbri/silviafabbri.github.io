@@ -64,9 +64,9 @@ main {
 }
 /*pesciolino*/
 div.fish{ position: absolute; top: 0em; right: 20px; z-index: 0;}
-div.fish1{ position: absolute; bottom: 100em; right: 20px; z-index: 0;transform: scalex(-1);}
+div.fish1{ position: absolute; bottom: 80em; right: 20px; z-index: 0;transform: scalex(-1);}
 div.fish2{ position: absolute; bottom: 18em; right: 20px; z-index: 0;}
-.foto{border-radius: 100%; border: 5px solid white;}
+.foto{border-radius: 100%; border: 5px solid aquamarine;}
 
 div.grid-container {
     display: grid;
@@ -104,7 +104,7 @@ div.grid-container > div:nth-child(5) {
 /*posizione foto*/
 div.grid-container > div:nth-child(7) {
     grid-column: 1/2;
-    grid-row: 4/6;
+    grid-row: 5/6;
 }
 /*posizione commento*/
 div.grid-container > div:nth-child(8) {
