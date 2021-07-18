@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Junior web developer portfolio. Puoi vedere i miei progressi con HTML, CSS e JavaScript.">
+    <title>VERDE CARAIBI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <div  id="top" class="head-container">
+        <header>
+
+            <div class="logo">
+                <img src="../fish-33712.svg" width="100" alt="logo">
+            </div>
+
+            <div class="title">
+                <h3 style="font-family: 'Playfair Display SC', serif;">VERDE CARAIBI</h3>
+                <small>By SILVIA FABBRI</small>
+            </div>
+
+            <div><img src="bubble4.png" alt="bolle"></div>
+
+            <div class="link">
+                <div>
+                    <a href="#project">PROJECT</a>
+                </div>
+                <div>
+                    <a href="#about">ABOUT</a>
+                </div>
+                <div>
+                    <a href="#contact">CONTACT</a>
+                </div>
+            </div>
+
+        </header>
+        </div>
+
+        <main>
+            <div class="fish"><img src="../fish-33712.svg" width="300" alt="fish">
+            </div>
+        
+            <div class="grid-container">
+                    <div>
+                        <canvas id="canvas" style="background:none;">
+                        </canvas>
+                    </div>
+
+                    <div class="thumbnail">
+                        <img src="bubble.png" alt="bolle">
+                            <div class="dropdown"> 
+                                <span class="label">Progetto sviluppato aprile 2021. <br>
+                                    Orologio costruito con JavaScript, <br> informazioni trovate su <br>
+                                    <a class="label" href="https://www.w3schools.com/graphics/canvas_clock_start.asp">W3schools.com</a><br>
+                                    layout elaborato da me.
+                                </span>
+                            </div> 
+                        <p>clicca</p>
+                    </div>
+
+                    <div>
+
+                        <div class="container-cal" >
+
+                            <div class="calcolo" >
+                                <div class="linea"> <div class="risultato"><input type="text" name="display" id="risultato" readonly="readonly"></div><div class="cancella u"><input type="submit" id="C" class="cancella a" value="C" onclick="cancella()"></div></div>
+                                <div class="linea"><div class="set u"><input type="submit" id="7" class="set a" value="7" onclick="n(this.id)"></div><div class="ott u"><input type="submit" id="8" class="ott a" value="8" onclick="n(this.id)"></div><div class="nov u"><input type="submit" id="9" class="nov a" value="9" onclick="n(this.id)"></div> <div class="div u"><input type="submit" id="/" class="div a" value="/" onclick="n(this.id)"></div></div>
+                                <div class="linea"><div class="qua u"><input type="submit" id="4" class="qua a" value="4" onclick="n(this.id)"></div><div class="cin u"><input type="submit" id="5" class="cin a" value="5" onclick="n(this.id)"></div><div class="sei u"><input type="submit" id="6" class="sei a" value="6" onclick="n(this.id)"></div> <div class="per u"><input type="submit" id="*" class="per a" value="x" onclick="n(this.id)"></div></div>
+                                <div class="linea"><div class="uno u"><input type="submit" id="1" class="uno a" value="1" onclick="n(this.id)"></div><div class="due u"><input type="submit" id="2" class="due a" value="2" onclick="n(this.id)"></div><div class="tre u"><input type="submit" id="3" class="tre a" value="3" onclick="n(this.id)"></div> <div class="piu u"><input type="submit" id="+" class="piu a" value="+" onclick="n(this.id)"></div></div>
+                                <div class="linea"><div class="zer u"><input type="submit" id="0" class="zer a" value="0" onclick="n(this.id)"></div><div class="vir u"><input type="submit" id="." class="vir a" value="." onclick="n(this.id)"></div><div class="ugu u"><input type="submit" class="ugu a" value="="  onclick="operazione()"></div> <div class="men u"><input type="submit" id="-" class="men a" value="-" onclick="n(this.id)"></div></div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="thumbnail">
+                        <img src="bubble.png" alt="bolle">
+                            <div class="dropdown"> 
+                                <span class="label">Progetto sviluppato giugno 2021. <br> 
+                                Calcolatrice basata sul <br> 
+                                codice fornito da <a class="label" href="https://www.codingcreativo.it/calcolatrice-con-javascript/">codicecreativo.it</a><br>
+                                CSS elaborato da me.
+                                </span>
+                            </div> 
+                            <p>clicca</p>
+                    </div>
+                
+                    <div>
+                        <div class="div two">
+                            <div id="countdown" style="height: 300px; margin-left: 3%;">
+                            </div>
+                        
+                            <div id="temposcaduto">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="thumbnail"><img src="bubble.png" id="btn" alt="bolle" title="clicca qui per inserire i secondi per il countdown">
+                        <div class="dropdown"> 
+                            <span class="label">Progetto sviluppato luglio 2021
+                            Conto alla rovescia  
+                            purtroppo non ricordo dove ho trovato il codice
+                            comunque da me abbondantemente modificato,
+                            CSS elaborato da me.
+                            </span>
+                        </div> 
+                        <p>Cliccando sulla bolla possono essere
+                        inseriti i secondi che si vuole
+                        utilizzare nel conto alla rovescia.</p>
+                    </div>
+
+                    <div>
+                        <img id="about" class="foto" src="IMG_20210716_174938.jpg" alt="foto" width="200">
+                    </div>
+                
+
+                    <div>
+                        <h4> SILVIA FABBRI </h4><br>
+                             <br>
+                            <hr> <br>
+                            <p>Nella vita commessa al supermercato,
+                            web developer per ambizione e passione.</p>
+                            <p> Ho sfruttato il tempo chiusa in casa
+                            per il covid-19 per formarmi ed ora 
+                            comincio a vedere i frutti del mio 
+                            duro lavoro.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="bubble3.png" alt="bolle">
+                    </div>
+                    <div>
+                        <img src="bubble4.png" alt="bolle">
+                    </div>
+
+                    <div id="project" class="project">
+
+                        <h4>PROSSIMI PROGETTI</h4>
+                        <ul>
+                            <li>Todo app</li>
+                            <li>Game</li>
+                            <li>Meteo app</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="bubble.png" alt="bolle">
+                    </div>
+                    <div>
+                        <img src="bubble.png" alt="bolle">
+                    </div>
+                    <div>
+                        <img src="bubble4.png" alt="bolle">
+                    </div>
+                    <div>
+                        <img src="bubble2.png" alt="bolle">
+                    </div>
+                    <div>
+                        <img src="bubble.png" alt="bolle">
+                    </div>
+                    <div>
+                        <img src="bubble1.png" alt="bolle">
+                    </div>
+                    <div>
+                        <img src="bubble1.png" alt="bolle">
+                    </div>
+                    <div>
+                        <img src="bubble4.png" alt="bolle">
+                    </div>
+                    <div>
+                        <img src="bubble.png" alt="bolle">
+                    </div>
+                    <div>
+                        <img src="bubble.png" alt="bolle">
+                    </div>
+            </div>
+            
+            <div>
+                <div>
+                    <img src="bubble4.png" alt="bolle">
+                </div>
+                <p>Contatto:<br>
+                 <hr>
+                 <br>
+                </p> 
+                <address id="contact">
+                    <a class="label" href="mailto:silviafabbrilucatini@hotmail.com">SILVIA FABBRI</a>
+                    
+                    <p>
+                        <br>
+                        Romagna (FC) <br>
+                        Italia
+                    </p>
+                </address>
+                <br>
+                
+            </div>
+
+            <div class="fish2"><img src="../fish-33712.svg" width="300" alt="fish">
+            </div>
+            <div class="fish1"><img src="../fish-33712.svg" width="300" alt="fish">
+            </div>
+        </main>
+
+    <footer>
+        <div class="container-foot">
+               
+            <div  class="foot">
+                <div>
+                    <small>Ver.3.0.6</small>
+                </div>
+                
+                <div>
+                    <a href="https://www.facebook.com">
+                        <img src="bubblef.png" alt="bolle">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/verde_caraibi_code/">
+                        <img src="bubblein.png" alt="bolle">
+                    </a>
+                </div>
+                <div>
+                    <a href="http://www.linkedin.com">
+                        <img src="bubblel.png" alt="bolle">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://github.com/SilviaFabbri/SilviaFabbri">
+                        <img src="bubbleg.png" alt="bolle">
+                    </a>
+                </div>
+                <div class="link">
+                    <div>
+                        <a style="font-size: medium;" class="link" href="#top">TOP ^</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="http://www.w3.org/html/logo/">
+                        <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="83" height="32" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+                    </a>
+                </div>
+                <div>
+                    <img src="pwrabyss.gif" alt="powered by Abyss" >
+                </div>
+                
+            </div>
+           
+        </div>   
+    </footer>
+    <script src="web_site.js"></script>   
+</body>
+</html>
