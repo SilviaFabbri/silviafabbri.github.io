@@ -109,7 +109,7 @@ div.grid-container > div:nth-child(7) {
 /*posizione commento*/
 div.grid-container > div:nth-child(8) {
     grid-column: 1/3;
-    grid-row: 4;
+    grid-row: 6;
 }
 /*posizione project*/
 div.grid-container > div:nth-child(11) {
