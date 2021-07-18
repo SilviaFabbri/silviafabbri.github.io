@@ -104,7 +104,7 @@ div.grid-container > div:nth-child(5) {
 /*posizione foto*/
 div.grid-container > div:nth-child(7) {
     grid-column: 1/2;
-    grid-row: 5/6;
+    grid-row: 4/6;
 }
 /*posizione commento*/
 div.grid-container > div:nth-child(8) {
