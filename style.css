@@ -25,7 +25,7 @@ header {
     
 }
 
-header > div { padding-top: 0 1em;}
+header > div { padding-top: 0;}
 header > div:nth-child(3) { margin: 0 0 0 auto;}
 
 .logo {transform: scalex(-1);}
@@ -64,8 +64,8 @@ main {
 }
 /*pesciolino*/
 div.fish{ position: absolute; top: 0em; right: 20px; z-index: 0;}
-div.fish1{ position: absolute; bottom: 80em; right: 20px; z-index: 0;transform: scalex(-1);}
-div.fish2{ position: absolute; bottom: 18em; right: 20px; z-index: 0;}
+div.fish1{ position: absolute; bottom: 18em; right: 20px; z-index: 0;transform: scalex(-1);}
+
 .foto{border-radius: 100%; border: 5px solid aquamarine;}
 
 div.grid-container {
@@ -84,16 +84,26 @@ div.grid-container >div {
 }
 /*per far l'orologio più grande*/
 div.grid-container > div:nth-child(1){
-    grid-column: span 2;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+div.grid-container > div:nth-child(2){
+    grid-column: 3;
     grid-row: 1;
 }
 #canvas{
     width: 80vw;
-    height: 40hw;
 }
+
 /*posizione della calcolatrice, prende 3 posizioni orizontali*/
 div.grid-container > div:nth-child(3) {
     grid-column: span 2;
+    grid-row: 2;
+}
+
+div.grid-container > div:nth-child(4){
+    grid-column: 3;
     grid-row: 2;
 }
 /*posizione del conto alla rovescia*/
@@ -101,20 +111,87 @@ div.grid-container > div:nth-child(5) {
     grid-column: span 2;
     grid-row: 3;
 }
+
+div.grid-container > div:nth-child(6){
+    grid-column: 3;
+    grid-row: 3;
+}
 /*posizione foto*/
 div.grid-container > div:nth-child(7) {
-    grid-column: 1/2;
+    grid-column: 1/3;
     grid-row: 4;
 }
 /*posizione commento*/
 div.grid-container > div:nth-child(8) {
     grid-column: 1/3;
-    grid-row: 4/6;
+    grid-row: 5;
+    width: 10em;
 }
+
+div.grid-container > div:nth-child(9){
+    grid-column: 3;
+    grid-row: 5;
+}
+
+div.grid-container > div:nth-child(10){
+    grid-column: 1;
+    grid-row: 6;
+}
+
 /*posizione project*/
 div.grid-container > div:nth-child(11) {
-    grid-column: 2/3;
-    grid-row: 7/8;
+    grid-column: 2;
+    grid-row: 8;
+}
+
+div.grid-container > div:nth-child(12){
+    grid-column: 3;
+    grid-row: 6;
+}
+
+div.grid-container > div:nth-child(13){
+    grid-column: 1;
+    grid-row: 7;
+}
+
+div.grid-container > div:nth-child(14){
+    grid-column: 2;
+    grid-row: 7;
+}
+
+div.grid-container > div:nth-child(15){
+    grid-column: 3;
+    grid-row: 7;
+}
+
+div.grid-container > div:nth-child(16){
+    grid-column: 1;
+    grid-row: 8;
+}
+
+div.grid-container > div:nth-child(17){
+    grid-column: 3;
+    grid-row: 8;
+}
+
+div.grid-container > div:nth-child(18){
+    grid-column: 1;
+    grid-row: 9;
+}
+
+div.grid-container > div:nth-child(19){
+    grid-column: 2;
+    grid-row: 9;
+}
+
+div.grid-container > div:nth-child(20){
+    grid-column: 3;
+    grid-row: 9;
+}
+
+div.grid-container > div:nth-child(21){
+    grid-column: 1;
+    grid-row: 10;
 }
 
 footer{ 
@@ -137,7 +214,7 @@ div.container-foot {
     }
 
 .foot > div:nth-child(1){ margin: 0 0 0 auto; margin-left: 0;}
-.foot > div:nth-child(2){ margin: 0 0 0 auto; margin: right 1em;}
+.foot > div:nth-child(2){ margin: 0 0 0 auto; margin-right: 0;}
 .foot > div:nth-child(7){ margin: 0 0 0 auto;}
     
 
@@ -183,7 +260,7 @@ div.container-cal{background: rgb(235, 229, 229);padding: 10px;border-radius: 10
 .u { border-radius: 10px;text-align: center; margin: 5px; box-shadow: 2px 3px 8px 2px rgb(196, 193, 193); color: white;}
 div.u:hover { box-shadow: 2px 3px 8px 2px rgb(65, 60, 60); }
 .a{  color: black; border:none; padding: 10% 50%;}
-div.linea{ display: grid; grid-template-columns: 4, 1fr; gap: 1px; grid-row: auto; background: none;  } 
+div.linea{ display: grid; grid-column: 4; gap: 1px; grid-row: auto; background: none;  } 
 div.risultato{ grid-column: 1/3; grid-row: 1; border-radius: 10px;margin: 0px;  background: rgb(168, 168, 170); }
 #risultato{ background: none; border: none; width: 98%; height: 90%; border-radius: 10px;color: white; text-align: end;font-size: large;}
 input{background: none; }
