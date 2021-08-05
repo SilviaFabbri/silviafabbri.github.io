@@ -257,7 +257,7 @@
             const info = document.getElementById('info')
             if(getCookie('Name'))
         {
-            info.innerHTML = 'Che bello! <br> Ci si rivede, <br>' + getCookie('Name')+'.'
+            info.innerHTML = 'Che bello<br>rivederti!<br>' + getCookie('Name')+'.'
         }
         else
         {
@@ -266,7 +266,7 @@
             {
                 name = 'Sconosciuto'
                 setCookie('Name', name, 7)
-                info.innerHTML = name + ',<br> Ti piace <br>l\'anonimato!'
+                info.innerHTML = name + ',<br> Ti piace <br>l\'anonimato?'
             } else{
             setCookie('Name', name, 7)
             info.innerHTML = 'É un piacere <br> fare la tua <br>conoscenza,<br> '+ name
