@@ -39,8 +39,7 @@
             </div>
 
         </header>
-        <audio src="bolle.mp3" autoplay controls>[Fallback Message]</audio>
-       
+        <audio src="bolle.mp3" autoplay>[Fallback Message]</audio>   
         </div>
 
         <main>
@@ -258,14 +257,22 @@
             const info = document.getElementById('info')
             if(getCookie('Name'))
         {
-            info.innerHTML = 'Che bello! <br> Ci si rivede, <br>' + getCookie('Name')
+            info.innerHTML = 'Che bello! <br> Ci si rivede, <br>' + getCookie('Name')+'.'
         }
         else
         {
-            let name = prompt('Ciao, sono Pino, ti va di dirmi il tuo nome?', 'Utente')
+            let name = prompt('Ciao, sono Pino, ti va di dirmi il tuo nome?', 'Utente')/*utente = placeholder*/
+            if(name === null)
+            {
+                name = 'Sconosciuto'
+                setCookie('Name', name, 7)
+                info.innerHTML = name + ',<br> Ti piace <br>l\'anonimato!'
+            } else{
             setCookie('Name', name, 7)
             info.innerHTML = 'É un piacere <br> fare la tua <br>conoscenza,<br> '+ name
+            }
         }
+        
      }
     </script>
     <script src="web_site.js"></script> 
