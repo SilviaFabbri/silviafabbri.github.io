@@ -39,8 +39,10 @@
             </div>
 
         </header>
-        <audio src="bolle.mp3" autoplay>[Fallback Message]</audio>   
-        </div>
+        <div class="audio">
+            <p>Vuoi ascoltare le bolle di Pino?</p>
+            <audio src="bolle.mp3" autoplay controls>[Fallback Message]</audio>   
+            </div>
 
         <main>
             <div class="fish"><img src="../fish-33712.svg" width="300" alt="fish">
@@ -196,11 +198,11 @@
                         Italia
                     </p>
                 </address>
-                <br>
                 
             </div>
-
+            
             <div class="fish1"><img src="../fish-33712.svg" width="300" alt="fish">
+                
             </div>
         </main>
 
@@ -239,11 +241,11 @@
                 </div>
                 <div>
                     <a href="http://www.w3.org/html/logo/">
-                        <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="83" height="32" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+                        <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="60"  alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
                     </a>
                 </div>
                 <div>
-                    <img src="pwrabyss.gif" alt="powered by Abyss" >
+                    <img src="pwrabyss.gif" width="40" alt="powered by Abyss" >
                 </div>
                 
             </div>
@@ -257,7 +259,7 @@
             const info = document.getElementById('info')
             if(getCookie('Name'))
         {
-            info.innerHTML = 'Che bello<br>rivederti!<br>' + getCookie('Name')+'.'
+            info.innerHTML = 'Che bello<br>rivederti!  <br>' + getCookie('Name')+'.'
         }
         else
         {

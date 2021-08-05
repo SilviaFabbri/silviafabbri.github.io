@@ -6,6 +6,7 @@
 }*/
 body{
     background: rgb(0, 5, 3);
+    width: 70%;
 }
 
 
@@ -51,7 +52,10 @@ div.link > div {
 
 div.link > div a {text-decoration: none;color: aquamarine;}
 
-audio{ margin: 0 15px; width: 12em; height: 2em;}
+div.audio{ 
+   display: block;
+    position:absolute;
+    margin: 5em; }
 #info{margin: 0 3em;}
 
 main {
@@ -66,14 +70,15 @@ main {
     position: sticky;/*per far scorrere il main sotto il footer*/
 }
 /*pesciolino*/
-div.fish{ position: absolute; top: -1em; right: 2em; z-index: 0;}
+div.fish{ position: absolute; top: 0em; right: 3em; z-index: 0;}
 div.fish1{ position: absolute; bottom: 18em; right: 20px; z-index: 0;transform: scalex(-1);}
 
 .foto{border-radius: 100%; border: 5px solid aquamarine;}
 
 div.grid-container {
+    margin-top: 20em;
     display: grid;
-    width: 100%;
+    width: 50em;
     height: 98%;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: repeat(10, 1fr);
@@ -200,6 +205,7 @@ div.grid-container > div:nth-child(21){
 footer{ 
     position: fixed; /*fissa il footer a piede pagina*/
     bottom: 0px;
+    width: 100%;
     }
 
 div.container-foot {
