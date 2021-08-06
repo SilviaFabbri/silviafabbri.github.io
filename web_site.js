@@ -89,20 +89,31 @@
      /*script per il countdown   */
      
          const btn = document.getElementById('btn')
+
          btn.addEventListener('click', function(){
-          document.getElementById("temposcaduto").innerHTML = "";
-         let timeleft =  prompt("insierisci i secondi che vuoi nel conto alla rovescia"); 
-          const gameTimer = setInterval(function(){
-     
-             if (timeleft<= -1){
-                 clearInterval(gameTimer);
-                 document.getElementById("temposcaduto").innerHTML = "Tempo scaduto!";
-             }else{
-                  document.getElementById("countdown").innerHTML =  timeleft ;
-             }
-             timeleft -= 1;
-         }, 1000 );
-     })
+              document.getElementById("temposcaduto").innerHTML = "";
+
+              let timeleft =  prompt("Insierisci i secondi che vuoi nel conto alla rovescia.");
+                  let soloLettere = /^[a-zA-Z]*$/.test(timeleft)
+                  console.log(soloLettere)
+
+                if (soloLettere == true || timeleft=="" ){
+                  alert("Errore. Per favore inserisci un valore numerico in secondi.");//impedisce che facciano entrare NaN
+                }
+                else
+                {
+                  const gameTimer = setInterval(function(){
+              
+                    if (timeleft<= -1){
+                        clearInterval(gameTimer);
+                        document.getElementById("temposcaduto").innerHTML = "Tempo scaduto!";
+                    }else{
+                          document.getElementById("countdown").innerHTML =  timeleft ;
+                    }
+                    timeleft -= 1;
+                  }, 1000 ); 
+                  }
+          })
 
      //regExp per validare la email
      /*(function () {

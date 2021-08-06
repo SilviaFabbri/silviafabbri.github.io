@@ -13,46 +13,45 @@
 <body>
    
         <div  id="top" class="head-container">
-        <header>
+            <header>
 
-            <div class="logo">
-                <img src="../fish-33712.svg" width="100" alt="logo">
-            </div>
-
-            <div class="title">
-                <h3 style="font-family: 'Playfair Display SC', serif;">VERDE CARAIBI</h3>
-                <small>By SILVIA FABBRI</small>
-            </div>
-
-            <div><img src="bubble4.png" alt="bolle"></div>
-
-            <div class="link">
-                <div>
-                    <a href="#project">PROJECT</a>
+                <div class="logo">
+                    <img src="../fish-33712.svg" width="100" alt="logo">
                 </div>
-                <div>
-                    <a href="#about">ABOUT</a>
-                </div>
-                <div>
-                    <a href="#contact">CONTACT</a>
-                </div>
-            </div>
 
-        </header>
-        <div class="audio">
-            <p>Vuoi ascoltare le bolle di Pino?</p>
-            <audio src="bolle.mp3" autoplay controls>[Fallback Message]</audio>   
-            </div>
+                <div class="title">
+                    <h3 style="font-family: 'Playfair Display SC', serif;">VERDE CARAIBI</h3>
+                    <small>By SILVIA FABBRI</small>
+                </div>
 
-        <main>
-            <div class="fish"><img src="../fish-33712.svg" width="300" alt="fish">
-                <p id="info"></p>
-            </div>
-        
-            <div class="grid-container">
+                <div><img src="bubble4.png" alt="bolle"></div>
+
+                <div class="link">
                     <div>
-                        <canvas id="canvas" style="background:none;">
-                        </canvas>
+                        <a href="#project">PROJECT</a>
+                    </div>
+                    <div>
+                        <a href="#about">ABOUT</a>
+                    </div>
+                    <div>
+                        <a href="#contact">CONTACT</a>
+                    </div>
+                </div>
+
+            </header>
+            <div class="audio">
+                <audio src="bolle.mp3" id="playAudio" autoplay>[Fallback Message]</audio> 
+                <iframe src="bolle.mp3" allow="autoplay" style="display: none;" id="iframeAudio" frameborder="0"></iframe>  
+            </div>
+
+            <main>
+                <div class="fish"><img src="../fish-33712.svg" width="300" alt="fish">
+                    <p id="info"></p>
+                </div>
+        
+                <div class="grid-container">
+                   <div>
+                        <canvas id="canvas" style="background:none;"></canvas>
                     </div>
 
                     <div class="thumbnail">
@@ -158,27 +157,7 @@
                     <div>
                         <img src="bubble4.png" alt="bolle">
                     </div>
-                    <div>
-                        <img src="bubble2.png" alt="bolle">
-                    </div>
-                    <div>
-                        <img src="bubble.png" alt="bolle">
-                    </div>
-                    <div>
-                        <img src="bubble1.png" alt="bolle">
-                    </div>
-                    <div>
-                        <img src="bubble1.png" alt="bolle">
-                    </div>
-                    <div>
-                        <img src="bubble4.png" alt="bolle">
-                    </div>
-                    <div>
-                        <img src="bubble.png" alt="bolle">
-                    </div>
-                    <div>
-                        <img src="bubble.png" alt="bolle">
-                    </div>
+                    
             </div>
             
             <div>
@@ -191,7 +170,6 @@
                 </p> 
                 <address id="contact">
                     <a class="label" href="mailto:silviafabbrilucatini@yahoo.es">SILVIA FABBRI</a>
-                    
                     <p>
                         <br>
                         Romagna (FC) <br>
@@ -201,81 +179,77 @@
                 
             </div>
             
-            <div class="fish1"><img src="../fish-33712.svg" width="300" alt="fish">
-                
-            </div>
+            <div class="fish1"><img src="../fish-33712.svg" width="300" alt="fish"></div>
         </main>
 
-    <footer>
-        <div class="container-foot">
-               
-            <div  class="foot">
-                <div>
-                    <small>Ver.3.0.7</small>
-                </div>
+        <footer>
+            <div class="container-foot">
                 
-                <div>
-                    <a href="https://www.facebook.com">
-                        <img src="bubblef.png" alt="bolle">
-                    </a>
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/verde_caraibi_code/">
-                        <img src="bubblein.png" alt="bolle">
-                    </a>
-                </div>
-                <div>
-                    <a href="http://www.linkedin.com">
-                        <img src="bubblel.png" alt="bolle">
-                    </a>
-                </div>
-                <div>
-                    <a href="https://github.com/SilviaFabbri/SilviaFabbri">
-                        <img src="bubbleg.png" alt="bolle">
-                    </a>
-                </div>
-                <div class="link">
+                <div  class="foot">
                     <div>
-                        <a style="font-size: medium;" class="link" href="#top">TOP ^</a>
+                        <small><Ver class="3 0 8"></Ver></small>
                     </div>
+                    
+                    <div>
+                        <a href="https://www.facebook.com">
+                            <img src="bubblef.png" alt="bolle">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/verde_caraibi_code/">
+                            <img src="bubblein.png" alt="bolle">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="http://www.linkedin.com">
+                            <img src="bubblel.png" alt="bolle">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/SilviaFabbri/SilviaFabbri">
+                            <img src="bubbleg.png" alt="bolle">
+                        </a>
+                    </div>
+                    <div class="link">
+                        <div>
+                            <a style="font-size: medium;" class="link" href="#top">TOP ^</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="http://www.w3.org/html/logo/">
+                            <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="60"  alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+                        </a>
+                    </div>
+                    <div>
+                        <img src="pwrabyss.gif" width="40" alt="powered by Abyss" >
+                    </div>
+                    
                 </div>
-                <div>
-                    <a href="http://www.w3.org/html/logo/">
-                        <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="60"  alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
-                    </a>
-                </div>
-                <div>
-                    <img src="pwrabyss.gif" width="40" alt="powered by Abyss" >
-                </div>
-                
-            </div>
-            <!--<a href="https://mp3cutterpro.com/it" target="_blank"> MP3 Cutter Pro </a>-->
-        </div>   
-    </footer>
+                <!--<a href="https://mp3cutterpro.com/it" target="_blank"> MP3 Cutter Pro </a>-->
+            </div>   
+        </footer>
+
     <script>
+
         addEventListener('load', welcome)
 
      function welcome(){
             const info = document.getElementById('info')
-            if(getCookie('Name'))
-        {
+            if(getCookie('Name')){
             info.innerHTML = 'Che bello<br>rivederti!  <br>' + getCookie('Name')+'.'
-        }
-        else
-        {
-            let name = prompt('Ciao, sono Pino, ti va di dirmi il tuo nome?', 'Utente')/*utente = placeholder*/
-            if(name === null)
-            {
-                name = 'Sconosciuto'
+            } else {
+                let name = prompt('Ciao, sono Pino, ti va di dirmi il tuo nome?', 'Utente')/*utente = placeholder*/
+                if(name === null) {
+                    name = 'Sconosciuto'
+                    setCookie('Name', name, 7)
+                    info.innerHTML = name + ',<br> Ti piace <br>l\'anonimato?'
+                } else {
                 setCookie('Name', name, 7)
-                info.innerHTML = name + ',<br> Ti piace <br>l\'anonimato?'
-            } else{
-            setCookie('Name', name, 7)
-            info.innerHTML = 'É un piacere <br> fare la tua <br>conoscenza,<br> '+ name
-            }
-        }
-        
-     }
+                info.innerHTML = 'É un piacere <br> fare la tua <br>conoscenza,<br> '+ name
+                }
+            }   
+    }
+
     </script>
     <script src="web_site.js"></script> 
     <script src="cookie.js"></script>  
