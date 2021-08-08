@@ -94,10 +94,10 @@
               document.getElementById("temposcaduto").innerHTML = "";
 
               let timeleft =  prompt("Insierisci i secondi che vuoi nel conto alla rovescia.");
-                  let soloLettere = /^[a-zA-Z]*$/.test(timeleft)
-                  console.log(soloLettere)
+                  let numELettere = /^[a-zA-Z0-9]*$/.test(timeleft)
+                  console.log(numELettere)
 
-                if (soloLettere == true || timeleft=="" ){
+                if (numELettere == true || timeleft=="" ){
                   alert("Errore. Per favore inserisci un valore numerico in secondi.");//impedisce che facciano entrare NaN
                 }
                 else
