@@ -1,4 +1,4 @@
-let isChrome =  /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+let isChrome =  /Chrome/.test(navigator.userAgentData) && /Google Inc/.test(navigator.vendor);
 if (!isChrome){
     let audio1= document.getElementById("iframeAudio")
     audio1.remove()

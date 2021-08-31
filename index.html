@@ -94,7 +94,7 @@
                 
                     <div>
                         <div class="div two">
-                            <div id="countdown" style="height: 300px; margin-left: 3%;">
+                            <div id="countdown" style="height: 300px; margin-left: 3%;"><div id="min"></div>:<div id="sec"></div>
                             </div>
                         
                             <div id="temposcaduto">
@@ -107,7 +107,10 @@
                             <span class="label">Progetto sviluppato luglio 2021
                             Conto alla rovescia  
                             purtroppo non ricordo dove ho trovato il codice
+                            iniziale dove si forniva un conto di 60 secondi.
                             comunque da me abbondantemente modificato,
+                            ho lottato parecchio per fare in modo che si vedessero
+                            minuti e secondi.
                             CSS elaborato da me.
                             </span>
                         </div> 
@@ -187,7 +190,7 @@
                 
                 <div  class="foot">
                     <div>
-                        <small>Ver.3 0 8</small>
+                        <small>Version 3.0.9</small>
                     </div>
                     
                     <div>
@@ -230,7 +233,7 @@
         </footer>
 
     <script>
-
+        //cookie di benvenuto
         addEventListener('load', welcome)
 
      function welcome(){
@@ -245,7 +248,7 @@
                     info.innerHTML = name + ',<br> Ti piace <br>l\'anonimato?'
                 } else {
                 setCookie('Name', name, 7)
-                info.innerHTML = 'É un piacere <br> fare la tua <br>conoscenza,<br> '+ name
+                info.innerHTML = 'Piacere di <br> fare la tua <br>conoscenza,<br> '+ name
                 }
             }   
     }
@@ -253,6 +256,7 @@
     </script>
     <script src="cartella_js/buble.js"></script>
     <script src="cartella_js/web_site.js"></script> 
-    <script src="cartella_js/cookie.js"></script>  
+    <script src="cartella_js/cookie.js"></script>
+    <script src="cartella_js/countdown.js"></script>  
 </body>
 </html>
