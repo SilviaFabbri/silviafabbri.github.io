@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <link rel="shortcut icon" href="multimedia/favicon.ico">
+    <link rel="shortcut icon" href="multimedia/favicon.ico" type="image/x-icon">
     <meta name = "viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Junior web developer portfolio. Puoi vedere i miei progressi con HTML, CSS e JavaScript.">
     <title>VERDE CARAIBI</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css_css/style.css">
+    <link rel="stylesheet" href="/css_css/newStyle.css">
+    <link rel="stylesheet" href="/css_css/countdown.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,900&display=swap" rel="stylesheet">
+    <noscript>JavaScript disabilitato</noscript>
 </head>
 <body>
    
@@ -41,7 +44,7 @@
             </header>
             <div class="audio">
                 <audio src="multimedia/bolle.mp3" id="playAudio" autoplay>[Fallback Message]</audio> 
-                <iframe src="multimedia/bolle.mp3" allow="autoplay" style="display: none;" id="iframeAudio" frameborder="0"></iframe>  
+                <iframe src="multimedia/bolle.mp3" allow="autoplay"  id="iframeAudio" frameborder="0"></iframe>  
             </div>
 
             <main>
@@ -50,7 +53,7 @@
                 </div>
         
                 <div class="grid-container">
-                   <div>
+                   <div class="canvas">
                         <canvas id="canvas" style="background:none;"></canvas>
                     </div>
 
@@ -94,7 +97,7 @@
                 
                     <div>
                         <div class="div two">
-                            <div id="countdown" style="height: 300px; margin-left: 3%;"><div id="min"></div>:<div id="sec"></div>
+                            <div id="countdown"><div id="min"></div>:<div id="sec"></div>
                             </div>
                         
                             <div id="temposcaduto">
@@ -164,7 +167,7 @@
             </div>
             
             <div>
-                <div>
+                <div class="bolle-fondo">
                     <img src="multimedia/bubble4.png" alt="bolle">
                 </div>
                 <p>Contatto:<br>
@@ -190,24 +193,25 @@
                 
                 <div  class="foot">
                     <div>
-                        <small>Version 3.0.9</small>
+                        <small>Version 3.1.0</small>
                     </div>
                     
-                    <div>
+                    <!--<div>
                         <a href="https://www.facebook.com">
                             <img src="multimedia/bubblef.png" alt="bolle">
                         </a>
-                    </div>
+                    </div>-->
                     <div>
                         <a href="https://www.instagram.com/verde_caraibi_code/">
                             <img src="multimedia/bubblein.png" alt="bolle">
                         </a>
                     </div>
-                    <div>
+                    <div></div><div></div><!--div aggiunto per far rimanere i link nel mezzo del grid-->
+                    <!--<div>
                         <a href="http://www.linkedin.com">
                             <img src="multimedia/bubblel.png" alt="bolle">
                         </a>
-                    </div>
+                    </div>-->
                     <div>
                         <a href="https://github.com/SilviaFabbri/SilviaFabbri">
                             <img src="multimedia/bubbleg.png" alt="bolle">
@@ -254,9 +258,10 @@
     }
 
     </script>
-    <script src="cartella_js/buble.js"></script>
-    <script src="cartella_js/web_site.js"></script> 
+    <script src="cartella_js/buble.js" async></script>
+    <script src="cartella_js/web_site.js"></script>
+    <script src="cartella_js/calculator.js" async></script> 
     <script src="cartella_js/cookie.js"></script>
-    <script src="cartella_js/countdown.js"></script>  
+    <script src="cartella_js/countdown.js" async></script>  
 </body>
 </html>

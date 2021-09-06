@@ -19,11 +19,14 @@
         }
         else
         {
-          minleft = minleft - 1;//fa iniziare il conto un minuto meno dell'inserito con 59 sec.
           document.getElementById("min").innerHTML =  minleft ;
+          minleft = minleft - 1;//fa iniziare il conto un minuto meno dell'inserito con 59 sec.
+          minleft = minleft < 10 ? "0" + minleft : minleft; //mette lo zero davanti ai minuti se sono meno di 10
+          document.getElementById("min").innerHTML =  minleft ;//minuti iniziali
+          
           const gameTimer = setInterval(function(){
           
-            if (secleft == 0){
+            if (secleft == -1){
               if(minleft == 0){
                 clearInterval(gameTimer);
                     document.getElementById("temposcaduto").innerHTML = "Tempo scaduto!";
@@ -33,9 +36,11 @@
                 secleft = 60
               }
             }
+            secleft = secleft < 10 ? "0" + secleft : secleft; //mette lo zero davanti ai secondi che sono meno di 10
             document.getElementById("min").innerHTML = minleft ;
             document.getElementById("sec").innerHTML = secleft ;
             secleft --;
+            
           }, 1000 ); 
           
           }
