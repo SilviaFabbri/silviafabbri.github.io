@@ -1,6 +1,8 @@
 /*istruzione countdown*/
 div.two {
-    background: rgba(122, 233, 209, 0.9) ;
+    margin: auto;
+    max-width: 200px;
+    background: rgba(250, 250, 250, 0.2) ;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -12,7 +14,7 @@ div.two {
     justify-content: center; 
     align-items: center; 
     color:#eee; 
-    font-size: 10em; 
+    font-size: 3em; 
     text-shadow: 1px 1px 5px black;
    
 }
@@ -22,5 +24,5 @@ div.two {
     align-items: center; 
     color:#eee; 
     text-shadow: 1px 1px 5px black;
-    font-size: 1.5em;
+    font-size: 1em;
 }

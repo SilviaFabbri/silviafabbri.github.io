@@ -1,29 +1,144 @@
 
 
 /* css per la calcolatrice*/
-div.container-cal{background: rgb(235, 229, 229);padding: 10px;border-radius: 10px;}
-.u { border-radius: 10px;text-align: center; margin: 5px; box-shadow: 2px 3px 8px 2px rgb(196, 193, 193); color: white;}
-div.u:hover { box-shadow: 2px 3px 8px 2px rgb(65, 60, 60); }
-.a{  color: black; border:none; padding: 10% 50%;}
-div.linea{ display: grid; grid-column: 4; gap: 1px; grid-row: auto; background: none;  } 
-div.risultato{ grid-column: 1/2; grid-row: 1; border-radius: 10px;margin: 0px;  background: rgb(168, 168, 170); }
-#risultato{ background: none; border: none; width: 98%; height: 90%; border-radius: 10px;color: white; text-align: end;font-size: large;}
-input{background: none; }
-div.cancella{ grid-column: 2/4; grid-row: 1; margin: 0;}
-div.set { grid-column: 1/1; grid-row: 1;}
-div.ott { grid-column: 2/2; grid-row: 1;}
-div.nov{ grid-column: 3/3; grid-row: 1; }
-div.div{ grid-column: 4/4; grid-row: 1;}
-div.qua { grid-column: 1/1; grid-row: 1;}
-div.cin { grid-column: 2/2; grid-row: 1; }
-div.sei{ grid-column: 3/3; grid-row: 1; }
-div.per{ grid-column: 4/4; grid-row: 1; }
-div.uno { grid-column: 1/1; grid-row: 1; }
-div.due { grid-column: 2/2; grid-row: 1; }
-div.tre{ grid-column: 3/3; grid-row: 1; }
-div.men{ grid-column: 4/4; grid-row: 1; }
-div.zer { grid-column: 1/1; grid-row: 1; }
-div.vir { grid-column: 2/2; grid-row: 1; }
-div.ugu{ grid-column: 3/3; grid-row: 1; }
-div.piu{ grid-column: 4/4; grid-row: 1; }
+div.container-cal{
+    margin: auto;
+    max-width: 80%;
+    background: rgb(235, 229, 229);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 10;
+}
 
+.u {
+     border-radius: 10px;
+     text-align: center; 
+     margin: 5px; 
+     box-shadow: 2px 3px 8px 2px rgb(196, 193, 193); 
+     color: white;
+    }
+
+div.u:hover {
+     box-shadow: 2px 3px 8px 2px rgb(65, 60, 60); 
+    }
+.a{
+    color: black; 
+    border:none;
+     padding: 10% 50%;
+    }
+
+div.linea{ 
+    display: grid; 
+    grid-column: 4; 
+    gap: 1px; 
+    grid-row: auto; 
+    background: none;  
+}
+
+div.risultato{ 
+    grid-column: 1/2; 
+    grid-row: 1; 
+    border-radius: 10px;
+    margin: 0px;  
+    background: rgb(168, 168, 170); 
+}
+
+#risultato{ 
+    background: none; 
+    border: none; 
+    width: 98%; 
+    height: 90%; 
+    border-radius: 10px;
+    color: white; 
+    text-align: end;
+    font-size: large;
+}
+
+input{
+    background: none; 
+}
+
+div.cancella{
+     grid-column: 2/4;
+      grid-row: 1; 
+      margin: 0;}
+
+div.set { 
+    grid-column: 1/1; 
+    grid-row: 1;
+}
+
+div.ott { 
+    grid-column: 2/2;
+     grid-row: 1;
+    }
+
+div.nov{ 
+    grid-column: 3/3; 
+    grid-row: 1; 
+}
+
+div.div{ 
+    grid-column: 4/4; 
+    grid-row: 1;
+}
+
+div.qua { 
+    grid-column: 1/1; 
+    grid-row: 1;
+}
+
+div.cin { 
+    grid-column: 2/2; 
+    grid-row: 1; 
+}
+
+div.sei{ 
+    grid-column: 3/3; 
+    grid-row: 1; 
+}
+
+div.per{ 
+    grid-column: 4/4; 
+    grid-row: 1; 
+}
+
+div.uno { 
+    grid-column: 1/1; 
+    grid-row: 1; 
+}
+
+div.due { 
+    grid-column: 2/2; 
+    grid-row: 1; 
+}
+
+div.tre{ 
+    grid-column: 3/3; 
+    grid-row: 1; 
+}
+
+div.men{ 
+    grid-column: 4/4; 
+    grid-row: 1; 
+}
+
+div.zer { 
+    grid-column: 1/1;
+     grid-row: 1; 
+}
+
+div.vir { 
+    grid-column: 2/2; 
+    grid-row: 1; 
+}
+
+div.ugu{ 
+    grid-column: 3/3; 
+    grid-row: 1; 
+}
+
+div.piu{ 
+    grid-column: 4/4; 
+    grid-row: 1; 
+}

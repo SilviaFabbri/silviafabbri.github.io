@@ -1,0 +1,153 @@
+@media screen and (min-width:600px)
+            and (max-width:999px) {
+                
+                .foto1{
+                    margin: auto;
+                    width: 12em;
+                    height: 12em;
+                    border: 6px solid #fff;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+                
+                .descrizione {
+                    padding-left: 3em;
+                    position: relative;
+                }
+
+
+                .float {
+                    margin:0 10px;
+                 }
+                 
+                 .float img {
+                     width: 2em;
+                     height: 2em;
+                 }
+                 
+                 .image-box {
+                     margin: 0.5em;
+                 }
+                
+                 .float-box {
+                     float: left;
+                     background: #dfdfdf;
+                     width: 33.3%;
+                     height: 13em;
+                     padding: 1px;
+                     border: 1px solid #000;
+                 }
+                 
+                address{
+                    padding:  10em 3em 6em 3em;
+                    background-image: url(../image/keyboard.jpg);
+                    color: #fff;
+                }
+
+                .contact{
+                    margin-top: 100px;
+                    padding: 2em;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    border-radius: 1em;
+                    -webkit-border-radius: 1em;
+                    -moz-border-radius: 1em;
+                    -ms-border-radius: 1em;
+                    -o-border-radius: 1em;
+                }
+                
+            }
+
+@media screen and (min-width:300px)
+            and (max-width:599px)   {
+                .foto{
+                    background-color: rgba(250, 250, 250, 0.6);
+                    border-radius: 0.5em;
+                    padding: 2em 2em;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    -webkit-border-radius: 0.5em;
+                    -moz-border-radius: 0.5em;
+                    -ms-border-radius: 0.5em;
+                    -o-border-radius: 0.5em;
+}
+
+                .foto1{
+                    margin: auto;
+                    width: 8em;
+                    height: 8em;
+                    border: 6px solid #fff;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+                
+                .descrizione {
+                    padding: 1em;
+                    position: relative;
+                }
+                  
+                  .dentro{
+                    padding: 3em;
+                    align-items: flex-start;
+                    font-size: 0.5em;
+                }
+
+                .name{
+                    padding: 2em;
+                    background-image: url(../image/abstract.jpg);
+                    color: rgb(250, 250, 250);
+                }
+
+                .float {
+                    margin:0 10px;
+                 }
+                 
+                 .float img {
+                     width: 2em;
+                     height: 2em;
+                 }
+                 
+                 .image-box {
+                     margin: 0.5em;
+                 }
+                 
+                 .image-box p {
+                     color: #777;
+                     font-size: 12px;
+                 }
+                 
+                 .float-box {
+                     float: left;
+                     background: #dfdfdf;
+                     width: 33.3%;
+                     height: 15em;
+                     padding: 1px;
+                     border: 1px solid #000;
+                 }
+                 
+
+                address{
+                    padding:  12em 3em 6em 3em;
+                    background-image: url(../image/keyboard.jpg);
+                    color: #fff;
+                }
+
+                .contact{
+                    margin-top: 100px;
+                    padding: 2em;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    border-radius: 1em;
+                    -webkit-border-radius: 1em;
+                    -moz-border-radius: 1em;
+                    -ms-border-radius: 1em;
+                    -o-border-radius: 1em;
+                }
+            } 
+
+

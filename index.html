@@ -3,189 +3,191 @@
 <head>
     <link rel="shortcut icon" href="multimedia/favicon.ico" type="image/x-icon">
     <meta name = "viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Junior web developer portfolio. Puoi vedere i miei progressi con HTML, CSS e JavaScript.">
-    <title>VERDE CARAIBI</title>
+    <meta name="description" content="Sviluppatore siti web con abilità HTML5, CSS3 and JavaScript. Freelance">
+    <title>SILVIA FABBRI</title>
     <link rel="stylesheet" href="/css_css/style.css">
     <link rel="stylesheet" href="/css_css/newStyle.css">
     <link rel="stylesheet" href="/css_css/countdown.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css_css/device.css">
+    
     <noscript>JavaScript disabilitato</noscript>
 </head>
 <body>
    
-        <div  id="top" class="head-container">
+        <div  id="top" >
             <header>
+               <div>
+                    <div >
+                        <audio src="multimedia/04_Sardinia.mp3" id="playAudio" controls>[Fallback Message]</audio> 
+                         
+                    </div>
+                </div>
+
+                <div class="canvas-container">
+                    <div class="canvas">
+                        <canvas id="canvas" ></canvas>
+                    </div>
+                    <div class="thumbnail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#ff0000" class="bi bi-info-square-fill" viewBox="0 0 16 16">
+                            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                          </svg>
+                            <div class="dropdown"> 
+                                
+                                <span class="label"> <br>
+                                    Orologio costruito con JavaScript, <br> 
+                                    informazioni trovate su <br>
+                                    <a class="label" href="https://www.w3schools.com/graphics/canvas_clock_start.asp">W3schools.com</a>.<br>
+                                    
+                                    Progetto sviluppato aprile 2021.
+                                </span>
+                            </div> 
+                        
+                    </div>
+                </div>
+                
+
+
+                <div class="name">
+                    <div class="dentro">
+                        <h1>SILVIA FABBRI</h1>
+                    </div>
+                </div>
+                
+                
 
                 <div class="logo">
-                    <img src="multimedia/fish-33712.svg" width="100" alt="logo">
+                    <!--qui qualunque cosa metta sarà alla rovescia-->
+                    
                 </div>
 
-                <div class="title">
-                    <h3 style="font-family: 'Playfair Display SC', serif;">VERDE CARAIBI</h3>
-                    <small>By SILVIA FABBRI</small>
-                </div>
+               
 
-                <div><img src="multimedia/bubble4.png" alt="bolle"></div>
+                
 
-                <div class="link">
-                    <div>
-                        <a href="#project">PROJECT</a>
-                    </div>
-                    <div>
-                        <a href="#about">ABOUT</a>
-                    </div>
-                    <div>
-                        <a href="#contact">CONTACT</a>
-                    </div>
-                </div>
+                <nav class="list">
+                    <ul>
+                        <li><a href="#about">ABOUT ME</a></li>
+                        <li><a href="#skills">SKILLS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <li></li>
+                    </ul>
+                </nav>
 
+                
             </header>
-            <div class="audio">
-                <audio src="multimedia/bolle.mp3" id="playAudio" autoplay>[Fallback Message]</audio> 
-                <iframe src="multimedia/bolle.mp3" allow="autoplay"  id="iframeAudio" frameborder="0"></iframe>  
-            </div>
+           
 
             <main>
-                <div class="fish"><img src="multimedia/fish-33712.svg" width="300" alt="fish">
+
+
+                
+
+                <div class="coockie"><!--questo è per il messaggio di benvenuto. cookie-->
                     <p id="info"></p>
                 </div>
         
                 <div class="grid-container">
-                   <div class="canvas">
-                        <canvas id="canvas" style="background:none;"></canvas>
-                    </div>
 
-                    <div class="thumbnail">
-                        <img src="multimedia/bubble.png" alt="bolle">
-                            <div class="dropdown"> 
-                                <span class="label">Progetto sviluppato aprile 2021. <br>
-                                    Orologio costruito con JavaScript, <br> informazioni trovate su <br>
-                                    <a class="label" href="https://www.w3schools.com/graphics/canvas_clock_start.asp">W3schools.com</a><br>
-                                    layout elaborato da me.
-                                </span>
-                            </div> 
-                        <p>clicca</p>
-                    </div>
-
-                    <div>
-
-                        <div class="container-cal" >
-
-                            <div class="calcolo" >
-                                <div class="linea"> <div class="risultato"><input type="text" name="display" id="risultato" readonly="readonly"></div><div class="cancella u"><input type="submit" id="C" class="cancella a" value="C" onclick="cancella()"></div></div>
-                                <div class="linea"><div class="set u"><input type="submit" id="7" class="set a" value="7" onclick="n(this.id)"></div><div class="ott u"><input type="submit" id="8" class="ott a" value="8" onclick="n(this.id)"></div><div class="nov u"><input type="submit" id="9" class="nov a" value="9" onclick="n(this.id)"></div> <div class="div u"><input type="submit" id="/" class="div a" value="/" onclick="n(this.id)"></div></div>
-                                <div class="linea"><div class="qua u"><input type="submit" id="4" class="qua a" value="4" onclick="n(this.id)"></div><div class="cin u"><input type="submit" id="5" class="cin a" value="5" onclick="n(this.id)"></div><div class="sei u"><input type="submit" id="6" class="sei a" value="6" onclick="n(this.id)"></div> <div class="per u"><input type="submit" id="*" class="per a" value="x" onclick="n(this.id)"></div></div>
-                                <div class="linea"><div class="uno u"><input type="submit" id="1" class="uno a" value="1" onclick="n(this.id)"></div><div class="due u"><input type="submit" id="2" class="due a" value="2" onclick="n(this.id)"></div><div class="tre u"><input type="submit" id="3" class="tre a" value="3" onclick="n(this.id)"></div> <div class="piu u"><input type="submit" id="+" class="piu a" value="+" onclick="n(this.id)"></div></div>
-                                <div class="linea"><div class="zer u"><input type="submit" id="0" class="zer a" value="0" onclick="n(this.id)"></div><div class="vir u"><input type="submit" id="." class="vir a" value="." onclick="n(this.id)"></div><div class="ugu u"><input type="submit" class="ugu a" value="="  onclick="operazione()"></div> <div class="men u"><input type="submit" id="-" class="men a" value="-" onclick="n(this.id)"></div></div>
-                            </div>
-                        </div> 
-                    </div>
-
-                    <div class="thumbnail">
-                        <img src="multimedia/bubble.png" alt="bolle">
-                            <div class="dropdown"> 
-                                <span class="label">Progetto sviluppato giugno 2021. <br> 
-                                Calcolatrice basata sul <br> 
-                                codice fornito da <a class="label" href="https://www.codingcreativo.it/calcolatrice-con-javascript/">codicecreativo.it</a><br>
-                                CSS elaborato da me.
-                                </span>
-                            </div> 
-                            <p>clicca</p>
-                    </div>
-                
-                    <div>
-                        <div class="div two">
-                            <div id="countdown"><div id="min"></div>:<div id="sec"></div>
-                            </div>
-                        
-                            <div id="temposcaduto">
-                            </div>
+                <div class="aboutMe">
+                            
+                    <div class="foto">
+                        <img id="about" class="foto1" src="multimedia/IMG_20210716_174938.jpg" alt="foto" width="200">
+                    
+                        <div class="descrizione">
+                            
+                                
+                                
+                            <p>Ciao, sono Silvia, <br>
+                                sono alcuni anni che mi dedico  allo
+                               sviluppo di siti web usando HTML5, CSS3 con funzioni
+                                elementari di JAVASCRIPT.<br>
+                                Come freelance offro costruzione, pubblicazione e 
+                                mantenimento dei vostri siti web statici.<br>
+                                Ideale per chi vuole una vetrina sul mondo
+                                con costi contenuti.<br>
+                                Sono diplomata maestra D'arte al
+                                G. Ballardini di Faenza (RA) Italia.
+                            </p>
                         </div>
                     </div>
-                
-                    <div class="thumbnail"><img src="multimedia/bubble.png" id="btn" alt="bolle" title="clicca qui per inserire i secondi per il countdown">
-                        <div class="dropdown"> 
-                            <span class="label">Progetto sviluppato luglio 2021
-                            Conto alla rovescia  
-                            purtroppo non ricordo dove ho trovato il codice
-                            iniziale dove si forniva un conto di 60 secondi.
-                            comunque da me abbondantemente modificato,
-                            ho lottato parecchio per fare in modo che si vedessero
-                            minuti e secondi con il relativo zero con i numeri inferiori a 10.
-                            CSS elaborato da me.
-                            </span>
-                        </div> 
-                        <p>Cliccando sulla bolla possono essere
-                        inseriti i minuti che si vogliono
-                        utilizzare nel conto alla rovescia.</p>
-                    </div>
 
-                    <div>
-                        <img id="about" class="foto" src="multimedia/IMG_20210716_174938.jpg" alt="foto" width="200">
-                    </div>
-                
+                </div>
+                <div>
+                    <h3 id="skills" >SKILLS</h3>
+                </div>
 
-                    <div>
-                        <br>
-                        <h4> SILVIA FABBRI </h4><br>
-                            
-                            <hr> <br>
-                            <p>Nella vita commessa al supermercato,
-                            web developer per passione.
-                            Diploma di maestro D'arte al G. Ballardini
-                            di Faenza (RA) Italia.
-                        </p>
+                <div class="float">
+                    <div class="float-box">
+                        <h4>HTML5</h4>
+                        <div class="image-box">
+                            <img src="./image/html5.png"/>
+                            <p>
+                                Questo linguaggio di markup è fondamentale,
+                                ci permette di dare una struttura
+                               al nostro sito.<br>
+                               Sebbene molto semplice, è necessario dominare
+                               bene la tecnica per rendere il sito più visibile
+                                sul web.
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <img src="multimedia/bubble3.png" alt="bolle">
+                </div>
+                <div class="float">
+                    <div class="float-box">
+                        <h4>CSS3</h4>
+                        <div class="image-box">
+                            <img src="./image/css3.png"/>
+                            <p>
+                            Possiamo
+                            dare lo stile che vogliamo dare al nostro sito,
+                            tutto dipende dalla vostra fantasia. 
+                            <br>
+                            Dammi le 
+                            tue idee e facciamo un capolavoro!
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <img src="multimedia/bubble4.png" alt="bolle">
+                </div>
+                <div class="float">
+                    <div class="float-box">
+                        <h4>JAVASCRIP</h4>
+                        <div class="image-box">
+                            <img src="./image/javascript.png"/>
+                            <p>
+                               Il linguaggio di scripting che ci permette
+                               di dare dinamicità al nostro sito
+                               <br> Dal cookie con
+                               un messaggio di benvenuto, qualche calcolo ,
+                               cambio di aspetto del sito
+                               ...fino a costruire vere 
+                               e proprie web app. 
+                            </p>
+                        </div>
                     </div>
-
-                    <div id="project" class="project">
-
-                        <h4>PROSSIMI PROGETTI</h4>
-                        <ul>
-                            <li>Todo app</li>
-                            <li>Game</li>
-                            <li>Meteo app</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <img src="multimedia/bubble.png" alt="bolle">
-                    </div>
-                    <div>
-                        <img src="multimedia/bubble.png" alt="bolle">
-                    </div>
-                    <div>
-                        <img src="multimedia/bubble4.png" alt="bolle">
-                    </div>
-                    
-            </div>
+                </div>
+                   
             
             <div>
-                <div class="bolle-fondo">
-                    <img src="multimedia/bubble4.png" alt="bolle">
-                </div>
-                <p>Contatto:<br>
-                 <hr>
-                 <br>
-                </p> 
+                
+                
                 <address id="contact">
-                    <a class="label" href="mailto:silviafabbrilucatini@yahoo.es">SILVIA FABBRI</a>
-                    <p>
+                    <div class="contact">
+                        <h3>SILVIA FABBRI</h3>
+                    <a class="label" href="mailto:silviafabbrilucatini@yahoo.es"><p>Inviami una e-mail</p><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                      </svg></a>
+                    <p>CASTROCARO TERME E TERRA DEL SOLE
                         <br>
-                        Romagna (FC) <br>
+                        (FC) <br>
                         Italia
                     </p>
+                    </div>
+                    
                 </address>
                 
             </div>
             
-            <div class="fish1"><img src="multimedia/fish-33712.svg" width="300" alt="fish"></div>
+            
         </main>
 
         <footer>
@@ -193,46 +195,48 @@
                 
                 <div  class="foot">
                     <div>
-                        <small>Version 3.1.3</small>
+                        <small>Version 3.2.1</small>
                     </div>
                     
-                    <!--<div>
-                        <a href="https://www.facebook.com">
-                            <img src="multimedia/bubblef.png" alt="bolle">
-                        </a>
-                    </div>-->
                     <div>
                         <a href="https://www.instagram.com/verde_caraibi_code/">
-                            <img src="multimedia/bubblein.png" alt="bolle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                              </svg>   
                         </a>
                     </div>
-                    <div></div><div></div><!--div aggiunto per far rimanere i link nel mezzo del grid-->
-                    <!--<div>
-                        <a href="http://www.linkedin.com">
-                            <img src="multimedia/bubblel.png" alt="bolle">
-                        </a>
-                    </div>-->
+                    
                     <div>
                         <a href="https://github.com/SilviaFabbri/SilviaFabbri">
-                            <img src="multimedia/bubbleg.png" alt="bolle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                              </svg> 
                         </a>
                     </div>
+                    
+
                     <div class="link">
                         <div>
-                            <a style="font-size: medium;" class="link" href="#top">TOP ^</a>
+                            <a style="font-size: medium;" class="link" href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                                <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+                              </svg></a>
                         </div>
                     </div>
+
+                    <div>
+                        <img src="multimedia/pwrabyss.gif" width="40" alt="powered by Abyss" >
+                    </div>
+                   
                     <div>
                         <a href="http://www.w3.org/html/logo/">
                             <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="60"  alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
                         </a>
                     </div>
-                    <div>
-                        <img src="multimedia/pwrabyss.gif" width="40" alt="powered by Abyss" >
-                    </div>
+                   
                     
                 </div>
-                <!--<a href="https://mp3cutterpro.com/it" target="_blank"> MP3 Cutter Pro </a>-->
+                
+                
             </div>   
         </footer>
 
@@ -243,23 +247,23 @@
      function welcome(){
             const info = document.getElementById('info')
             if(getCookie('Name')){
-            info.innerHTML = 'Che bello<br>rivederti!  <br>' + getCookie('Name')+'.'
+            info.innerHTML = 'BENTORNAT@ ' + getCookie('Name')+'.'
             } else {
-                let name = prompt('Ciao, sono Pino, ti va di dirmi il tuo nome?','Utente')/*utente = placeholder*/
-                if(name === 'Utente') {
-                    name = 'Sconosciuto';
+                let name = prompt('CIAO, COME TI CHIAMI?','')/*utente = placeholder*/
+                if(name === '') {
+                    name = 'SCONOSCIUT@  ';
                     setCookie('Name', name, 7)
-                    info.innerHTML = name + ',<br> Ti piace <br>l\'anonimato?'
+                    info.innerHTML = name + 'BUONA NAVIGAZIONE'
                 } else {
                 setCookie('Name', name, 7)
-                info.innerHTML = 'Piacere di <br> fare la tua <br>conoscenza,<br> '+ name
+                info.innerHTML = 'BENVENUT@ ' + name  
                 }
             }   
     }
 
     </script>
-    <script src="cartella_js/buble.js" async></script>
-    <script src="cartella_js/web_site.js"></script>
+    
+    <script src="cartella_js/reloj.js"></script>
     <script src="cartella_js/calculator.js" async></script> 
     <script src="cartella_js/cookie.js"></script>
     <script src="cartella_js/countdown.js" async></script>  
