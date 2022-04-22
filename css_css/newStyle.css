@@ -9,30 +9,30 @@
 body{
     
     height: 100%;
-    padding-bottom: 5em;
 }
 
 .name{
     padding: 1em;
-    background-image: url(../image/abstract.jpg);
+    background-image: url(../image/coding.jpg);
     color: rgb(250, 250, 250);
 }
 
 .dentro{
-    padding: 1em;
+    padding: 2em;
     text-align: left;
+    font-size: xx-large;
 }
 
 audio{
     width: 100%;
-    height: 11px;
+    height: 25px;
 }
 
 ul {
     padding: 1em;
     list-style-type: none;
     text-align: center;
-    background-color: #555;
+    background-color: black;
 }
 
 li{
@@ -54,14 +54,14 @@ a:link, a:visited {
 .canvas-container { /*per posizionare l'orologio*/
   z-index: 10;
   position:fixed;
-  top: 1.2em;
+  top: 3em;
   right: 2.8em;
 
 }
 
 .canvas{
     height: 1px;
-    width: 100px;
+    width: 8em;
 }
 
 /* movimento delle info*/
@@ -75,24 +75,26 @@ div.dropdown { position: absolute;
 
 div.thumbnail:hover div.dropdown { display: block;}
 
-
-
 span.label { display: block;
     padding: 15px;
     text-align: center;
-    color: #000;
-    background-color: rgba(2, 88, 248, 0.9);
+    color: #ccc;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 /*qui finesce il thumbnail*/
+p{text-indent: 2em;}
+
+p::first-letter{font-size: xx-large;}
 .aboutMe{
     padding: 6em 2em;
-    background-image: url(../image/background.jpg);
+    background-image: url(../image/city.jpg);
 }
 
 .foto{
     background-color: rgba(250, 250, 250, 0.7);
+    border: 1px solid rgba(250, 250, 250, 0.9);
     border-radius: 1em;
-    padding: 3em 4em;
+    padding: 3em 3em;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -103,7 +105,8 @@ span.label { display: block;
 }
 
 .foto1{
-    border: 6px solid #fff;
+    height: 13em;
+    border: 2px solid #fff;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -126,21 +129,22 @@ span.label { display: block;
 }
 
 .float {
-   margin:0 30px;
+   margin:0 8em;
 }
 
 .float img {
-    width: 100px;
-    height: 100px;
+    width: 5em;
+    height: 5em;
+    margin: 0.5em;
 }
 
 .image-box {
-    margin: 10px;
+    margin: 0.5em;
 }
 
 .image-box p {
     color: #777;
-    font-size: 14px;
+    font-size: 1em;
 }
 
 .image-box img {
@@ -151,21 +155,26 @@ span.label { display: block;
     float: left;
     background: #dfdfdf;
     width: 33.3%;
-    height: 11em;
-    padding: 6px;
+    height: 25em;
+    padding: 1em;
     border: 1px solid #000;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
 }
 
 
 address{
     
-    padding:  6em 3em;
+    padding:  4em 3em;
     background-image: url(../image/keyboard.jpg);
     color: #fff;
 }
 
 .contact{
-    margin-top: 100px;
+    margin-top: 50em;
     padding: 1em 6em;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 1em;

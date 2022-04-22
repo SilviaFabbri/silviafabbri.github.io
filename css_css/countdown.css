@@ -1,0 +1,28 @@
+/*istruzione countdown*/
+div.two {
+    margin: auto;
+    max-width: 200px;
+    background: rgba(250, 250, 250, 0.2) ;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+#countdown{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color:#eee; 
+    font-size: 3em; 
+    text-shadow: 1px 1px 5px black;
+   
+}
+#temposcaduto{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color:#eee; 
+    text-shadow: 1px 1px 5px black;
+    font-size: 1em;
+}
