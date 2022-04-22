@@ -85,8 +85,9 @@ span.label { display: block;
 p{text-indent: 2em;}
 
 p::first-letter{font-size: xx-large;}
+
 .aboutMe{
-    padding: 6em 2em;
+    padding: 6em 8em;
     background-image: url(../image/pixels-1275701_1280.jpg);
     color: #fff;
 }
@@ -169,7 +170,7 @@ p::first-letter{font-size: xx-large;}
 
 address{
     
-    padding:  4em 3em;
+    padding:  4em 8em;
     background-image: url(../image/technology.jpg);
     color: #fff;
 }
