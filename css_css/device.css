@@ -37,11 +37,7 @@
                      background: #dfdfdf;
                      width: 33.3%;
                      height: 25em;
-<<<<<<< HEAD
                      padding: 0.5em;
-=======
-                     padding: 0.5EM;
->>>>>>> c1b5f4b2ba039ceeb0d7771ed7d677e013e1902d
                      border: 1px solid #000;
                  }
                  
@@ -135,26 +131,21 @@
                      float: left;
                      background: #dfdfdf;
                      width: 33.3%;
-<<<<<<< HEAD
-                     height: 35em;
+                     height: 36em;
                      padding: 0.5em;
-=======
-                     height: 34em;
-                     padding: 1px;
->>>>>>> c1b5f4b2ba039ceeb0d7771ed7d677e013e1902d
                      border: 1px solid #000;
                  }
                  
 
                 address{
-                    padding:  4em 3em;
+                    padding:  4em 0.5em;
                     background-image: url(../image/keyboard.jpg);
                     color: #fff;
                 }
 
                 .contact{
                     margin-top: 70em;
-                    padding: 2em;
+                    padding: 1em;
                     background-color: rgba(0, 0, 0, 0.4);
                     border: 1px solid rgba(250, 250, 250, 0.4);
                     border-radius: 1em;
