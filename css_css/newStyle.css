@@ -13,6 +13,7 @@ body{
 
 .name{
     padding: 1em;
+    background-image: url(../image/background-5035258_1920.jpg);
     color: rgb(250, 250, 250);
 }
 
@@ -95,7 +96,7 @@ p::first-letter{font-size: xx-large;}
     display: flex;
     flex-direction: row;
     padding: 1em 6em;
-    background-color: rgba(250, 250, 250, 0.2);
+    background-color: rgba(250, 250, 250, 0.1);
     border: 1px solid rgba(250, 250, 250, 0.4);
     border-radius: 1em;
     -webkit-border-radius: 1em;

@@ -41,7 +41,7 @@
                      float: left;
                      background: #dfdfdf;
                      width: 33.3%;
-                     height: 25em;
+                     height: 19em;
                      padding: 0.5em;
                      border: 1px solid #000;
                  }
@@ -52,7 +52,7 @@
                 }
 
                 .contact{
-                    margin-top: 50em;
+                    margin-top: 40em;
                     padding: 2em;
                     background-color: rgba(250, 250, 250, 0.1);
                     border: 1px solid rgba(250, 250, 250, 0.4);
@@ -72,7 +72,7 @@
                     width: 6em;
                 }
                 .foto{
-                    background-color: rgba(250, 250, 250, 0.2);
+                    background-color: rgba(250, 250, 250, 0.1);
                     border: 1px solid rgba(250, 250, 250, 0.4);
                     border-radius: 0.5em;
                     padding: 2em 2em;
@@ -111,7 +111,6 @@
 
                 .name{
                     padding: 1em;
-                    background-image: url(../image/coding.jpg);
                     color: rgb(250, 250, 250);
                 }
 
@@ -137,7 +136,7 @@
                      float: left;
                      background: #dfdfdf;
                      width: 33.3%;
-                     height: 36em;
+                     height: 30em;
                      padding: 0.5em;
                      border: 1px solid #000;
                  }
@@ -149,7 +148,7 @@
                 }
 
                 .contact{
-                    margin-top: 70em;
+                    margin-top: 60em;
                     padding: 1em;
                     background-color: rgba(250, 250, 250, 0.1);
                     border: 1px solid rgba(250, 250, 250, 0.4);
