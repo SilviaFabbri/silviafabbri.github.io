@@ -157,7 +157,7 @@ p::first-letter{font-size: xx-large;}
     float: left;
     background: #dfdfdf;
     width: 33.3%;
-    height: 25em;
+    height: 20em;
     padding: 1em;
     border: 1px solid #000;
     border-radius: 1em;
@@ -176,7 +176,7 @@ address{
 }
 
 .contact{
-    margin-top: 50em;
+    margin-top: 40em;
     padding: 1em 6em;
     background-color: rgba(250, 250, 250, 0.1);
     border: 1px solid rgba(250, 250, 250, 0.4);
