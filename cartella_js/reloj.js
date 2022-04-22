@@ -3,7 +3,7 @@
      let ctx = canvas.getContext("2d");
      let radius = canvas.height / 2;
      ctx.translate(radius, radius);
-     radius = radius * 0.90
+     radius = radius * 0.80
      setInterval(drawClock, 1000);
      
      function drawClock() {
