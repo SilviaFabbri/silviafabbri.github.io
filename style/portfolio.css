@@ -69,25 +69,6 @@ h2{
 }
 
 
-
-footer {
-    position: relative;
-}
-
-.foot {
-    background-color: rgba(250, 250, 250, 0.2);
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    color:#fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 1em 0 0 0;
-}
-
-
 img{
     width: 45em;
     height: 25em;
@@ -162,4 +143,21 @@ p{
     font-size: 1em;
     margin-top: -4.5em;
     margin-bottom: 5em;
+}
+
+footer {
+    position: relative;
+}
+
+.foot {
+    background-color: rgba(250, 250, 250, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color:#fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1em 0 0 0;
 }

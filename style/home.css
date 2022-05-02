@@ -69,24 +69,6 @@ h2{
     -o-border-radius: 1em;
 }
 
-
-
-footer {
-    position: relative;
-}
-
-.foot {
-    background-color: rgba(250, 250, 250, 0.2);
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    color:#fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 1em 0 0 0;
-}
 p{
     width: 50em;
     padding: 1.5em 3em 4em 3em;
@@ -152,3 +134,19 @@ p{
 	-o-border-radius: 30px;
 }
 
+footer {
+    position: relative;
+}
+
+.foot {
+    background-color: rgba(250, 250, 250, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color:#fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1em 0 0 0;
+}
