@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-color: 1 px solid black;
+    color: cornflowerblue;
+    z-index: -3;
+}
+body{
+    margin: 3em;
+    background-color: #333;
+}
+h1{
+    font-family: monospace;
+    font-size: 5em;
+}
+header {
+    margin: 3em;
+}
+main{
+    margin: 5em auto;
+    text-align: center;
+}
+footer{
+    margin: 30%;
+    font-size: 3em;
+    text-align: center;
+}
