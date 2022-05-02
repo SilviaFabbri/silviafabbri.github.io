@@ -1,0 +1,97 @@
+@media screen and (min-width:600px)/*tablet*/
+            and (max-width:999px){
+                main{
+                    margin-bottom: 4em;
+                }
+                h1{
+                    font-size: 3em;
+                    margin: 0.5em 1em;
+                }
+                
+                h2{
+                    margin: 1em;
+                }
+                .Entra
+                {
+                    width: 30em;
+                    height: 10em;
+                    position: relative;
+                    margin: 0 auto;
+                    padding: 2em 0;
+                    background-color: rgba(250, 250, 250, 0.1);
+                    border: 1px solid rgba(250, 250, 250, 0.4);
+                    border-radius: 1em;
+                    -webkit-border-radius: 1em;
+                    -moz-border-radius: 1em;
+                    -ms-border-radius: 1em;
+                    -o-border-radius: 1em;
+                }
+               
+                p{
+                    width: 20em;
+                }
+                
+                .slider-container
+                {
+                    display: inline-block;
+                    height: 14em;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    overflow: hidden;
+                }
+            }
+
+@media screen and (min-width:300px)/*cellulare*/
+            and (max-width:599px){
+
+                main{
+                    margin-bottom: 7em;
+                }
+                h1{
+                    font-size: 2.5em;
+                    margin: 1.5em 1em;
+                }
+                
+                h2{
+                    margin: 1em;
+                }
+                .Entra
+                {
+                    width: 22em;
+                    height: 14em;
+                    position: relative;
+                    margin: 0 auto;
+                    padding: 2em 0;
+                    background-color: rgba(250, 250, 250, 0.1);
+                    border: 1px solid rgba(250, 250, 250, 0.4);
+                    border-radius: 1em;
+                    -webkit-border-radius: 1em;
+                    -moz-border-radius: 1em;
+                    -ms-border-radius: 1em;
+                    -o-border-radius: 1em;
+                }
+                
+               
+                p{
+                    width: 20em;
+                    margin-bottom: 1.5em;
+                }
+                
+                .slider-container
+                {
+                    display: inline-block;
+                    width: 20em;
+                    height: 26em;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 0px;
+                    text-align: center;
+                    overflow: hidden;
+                }
+
+                small{
+                    font-size: x-small;
+                    padding: 0 1em;
+                }
+            }  

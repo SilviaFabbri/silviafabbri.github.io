@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /* border: 1px solid yellow;*/
+   font-family: 'Playfair Display', serif;
+}
+body{
+    background-image:url(/immagini/background.jpg);
+    color: #fff;
+    padding-bottom: 5em;
+}
+
+
+ul {
+    padding: 1em;
+    list-style-type: none;
+    text-align: center;
+    background-color: rgba(250, 250, 250, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+li{
+    display: inline;
+    padding: 0 3%;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+.canvas-container { /*per posizionare l'orologio*/
+    z-index: 10;
+    position:fixed;
+    bottom: 12em;
+    right: 1em;
+  
+  }
+  
+  .canvas{
+      height: 1px;
+      width: 8em;
+  }
+main{
+    text-align: center;
+    align-items: center;
+}
+h1{
+    font-size: 3em;
+}
+h2{
+    margin: 0.8em;
+}
+
+.Entra
+{
+    width: 5em;
+    position: relative;
+    margin: 0 auto;
+    font-size: 3em;
+    padding: 1em;
+    background-color: rgba(250, 250, 250, 0.1);
+    border: 1px solid rgba(250, 250, 250, 0.4);
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+
+
+
+footer {
+    position: relative;
+}
+
+.foot {
+    background-color: rgba(250, 250, 250, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color:#fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1em 0 0 0;
+}
+
+
+img{
+    width: 45em;
+    height: 25em;
+    margin-bottom: 5em;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+
+.slider-container
+{
+    display: inline-block;
+    width: 50em;
+    height: 28em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+.image-container
+{
+
+    display: block;
+    width: 180em;
+    height: 28em;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+    -ms-transition: left 2s;
+}
+#slider-image-1:target ~ .image-container
+{
+   left: 0px;
+}
+#slider-image-2:target ~ .image-container
+{
+   left: -400px;
+}
+#slider-image-3:target ~ .image-container
+{
+   left: -800px;
+}
+#slider-image-4:target ~ .image-container
+{
+   left: -1600px;
+}
+.button-container
+{
+    position: relative;
+    margin-top: -1em;
+}
+.slider-change
+{
+	display: inline-block;
+    background-color: rgba(250, 250, 250, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.7);
+	border-radius: 30px;
+	width: 30px;
+	height: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+}
+p{
+    font-size: 1em;
+    margin-top: -4.5em;
+    margin-bottom: 5em;
+}

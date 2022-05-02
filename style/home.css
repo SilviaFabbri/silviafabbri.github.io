@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /* border: 1px solid yellow;*/
+   font-family: 'Playfair Display', serif;
+}
+body{
+    background-image:url(/immagini/background.jpg);
+    color: #fff;
+    padding-bottom: 5em;
+}
+
+
+ul {
+    padding: 1em;
+    list-style-type: none;
+    text-align: center;
+    background-color: rgba(250, 250, 250, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+li{
+    display: inline;
+    padding: 0 3%;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+.canvas-container { /*per posizionare l'orologio*/
+    z-index: 10;
+    position:fixed;
+    bottom: 12em;
+    right: 1em;
+  
+  }
+  
+  .canvas{
+      height: 1px;
+      width: 8em;
+  }
+main{
+    text-align: center;
+    align-items: center;
+}
+h1{
+    font-size: 3em;
+    margin: 1.5em 1em;
+}
+
+h2{
+    margin: 1em;
+}
+.Entra
+{
+    width: 60em;
+    height: 13em;
+    position: relative;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: rgba(250, 250, 250, 0.1);
+    border: 1px solid rgba(250, 250, 250, 0.4);
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+
+
+
+footer {
+    position: relative;
+}
+
+.foot {
+    background-color: rgba(250, 250, 250, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color:#fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1em 0 0 0;
+}
+p{
+    width: 50em;
+    padding: 1.5em 3em 4em 3em;
+}
+
+.slider-container
+{
+    display: inline-block;
+    height: 10em;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+.image-container
+{
+
+    display: block;
+    width: 160em;
+    height: 10em;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+    -ms-transition: left 2s;
+}
+#slider-image-1:target ~ .image-container
+{
+   left: 0;
+}
+#slider-image-2:target ~ .image-container
+{
+   left: -20em;
+}
+#slider-image-3:target ~ .image-container
+{
+   left: -40em;
+}
+#slider-image-4:target ~ .image-container
+{
+   left: -60em;
+}
+.button-container
+{
+    position: relative;
+    margin-top: -1em;
+}
+.slider-change
+{
+	display: inline-block;
+    background-color: rgba(250, 250, 250, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.7);
+	border-radius: 30px;
+	width: 30px;
+	height: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+}
+

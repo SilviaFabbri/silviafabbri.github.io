@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /* border: 1px solid yellow;*/
+   font-family: 'Playfair Display', serif;
+}
+body{
+    background-image:url(/immagini/background.jpg);
+    color: #fff;
+    padding-bottom: 5em;
+}
+
+
+ul {
+    padding: 1em;
+    list-style-type: none;
+    text-align: center;
+    background-color: rgba(250, 250, 250, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+li{
+    display: inline;
+    padding: 0 3%;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+.canvas-container { /*per posizionare l'orologio*/
+    z-index: 10;
+    position:fixed;
+    bottom: 12em;
+    right: 1em;
+  
+  }
+  
+  .canvas{
+      height: 1px;
+      width: 8em;
+  }
+main{
+    text-align: center;
+    align-items: center;
+}
+h1{
+    font-size: 3em;
+    margin: 1.5em 1em;
+}
+
+h2{
+    margin: 1em;
+}
+.Entra
+{
+    width: 30em;
+    height: 8em;
+    position: relative;
+    margin: 0 auto;
+    padding: 1em 0;
+    background-color: rgba(250, 250, 250, 0.1);
+    border: 1px solid rgba(250, 250, 250, 0.4);
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+p{
+    width: 30em;
+    padding: 0.3em;
+}
+
+.slider-container
+{
+    display: inline-block;
+    height: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+footer {
+    position: relative;
+}
+
+.foot {
+    background-color: rgba(250, 250, 250, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color:#fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+small{
+    font-size: x-small;
+}
